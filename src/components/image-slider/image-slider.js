@@ -1,15 +1,7 @@
 import { useEffect, useState } from "react";
-import data from "./data";
-import {
-  BsArrowLeftCircleFill,
-  BsArrowRightCircleFill,
-  BsCircleFill,
-  BsCircle,
-} from "react-icons/bs";
+import { BsCircleFill } from "react-icons/bs";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import "./styles.css";
-import matchersStandalone from "@testing-library/jest-dom/matchers";
-import { IoImagesSharp } from "react-icons/io5";
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 

@@ -1,6 +1,3 @@
-.filled {
-  fill: url(./styles.css#myGradient)
-}
 .star-container {
   display: flex;
   flex-direction: row;

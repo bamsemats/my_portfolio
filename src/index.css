@@ -221,6 +221,7 @@ code {
   margin-bottom: 48px;
   background: linear-gradient(0deg, rgba(var(--bg-main-two-rgb), 1), rgb(var(--bg-main-rgb), 1));
   transition: 350ms;
+  /* overflow: hidden; */
 }
 
 @media (width < 786px) {
@@ -285,6 +286,10 @@ code {
 }
 .bento-tree-view {
  grid-area: six
+}
+.bento-chef-claude {
+  grid-area: nine;
+  overflow: auto;
 }
 .title-bar {
   background: linear-gradient(var(--bg-panel), var(--bg-panel-two));
@@ -409,76 +414,7 @@ button:hover:not(
   opacity: 0.8;
 }
 
-@keyframes static-bg-translate-lg {
-  0% {left: 1vw; top: 14vh; scale: 1; z-index: 0}
-  15%, 100% {left: 5rem; top: -1.5rem; scale: 0.3; z-index: 2}
-}
 
-@keyframes static-bg-translate-md {
-  0% {left: 3vw; top: 14vh; scale: 1; z-index: 0}
-  8%, 100% {left: 7rem; top: -0.3rem; scale: 0.3; z-index: 2}
-}
-
-@keyframes static-bg-translate-sm {
-  0% {left: 3vw; top: 14vh; scale: 1; z-index: 0}
-  6%, 100% {left: 7.3rem; top: -0.2rem; scale: 0.3; z-index: 2}
-}
-
-@keyframes static-bg-translate-xsm {
-  0% {left: 3vw; top: 14vh; scale: 1; z-index: 0}
-  6%, 100% {left: 4.8rem; top: -0.2rem; scale: 0.3; z-index: 2}
-}
-
-@media (width > 1050px) {
-  .token-1 {
-    font-size: 5rem;
-    left: 1vw;
-    top: 14vh;
-  }
-  .static-bg .token-1 {
-    animation: static-bg-translate-lg linear forwards;
-    animation-timeline: scroll();
-  }
-}
-@media (width < 1050px) {
-  .token-1 {
-    font-size: 3rem;
-    left: 3vw;
-    top: 14vh;
-  }
-  .static-bg .token-1 {
-    animation: static-bg-translate-md linear forwards;
-    animation-timeline: scroll();
-  }
-}
-@media (width < 578px) {
-  .token-1 {
-    font-size: 2rem;
-    left: 3vw;
-    top: 14vh;
-  }
-  .static-bg .token-1 {
-    animation: static-bg-translate-sm linear forwards;
-    animation-timeline: scroll();
-  }
-}
-@media (width < 530px) {
-  .title-bar-title {
-    font-size: 1rem;
-  }
-}
-@media (width < 465px) {
-  .title-bar-logo-name {
-    max-width: 4rem;
-  }
-  .static-bg .token-1 {
-    animation: static-bg-translate-xsm linear forwards;
-    animation-timeline: scroll();
-  }
-  .darkmode-div>p {
-    display: none;
-  }
-}
 .static-bg .token-2 {
   position: fixed;
   left: 20vw;

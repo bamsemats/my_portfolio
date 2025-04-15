@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import Data from "./data";
 import "./styles.css";
 import { FaStar } from "react-icons/fa";
 
@@ -27,16 +26,18 @@ export default function Stars() {
         {starArray.map((star, i) => {
           let filler = "";
           if (tempSelectedStar > 0) {
-            filler = tempSelectedStar > i ? "url(#myGrad)" : "var(--btn-bg)";
+            filler =
+              tempSelectedStar > i ? `url(#myGrad-${i})` : "var(--btn-bg)";
           } else {
-            filler = currentSelectedStar > i ? "url(#myGrad)" : "var(--btn-bg)";
+            filler =
+              currentSelectedStar > i ? `url(#myGrad-${i})` : "var(--btn-bg)";
           }
           return (
             <div className="star-div" key={i}>
               <svg width="30" height="30">
                 <defs>
                   <linearGradient
-                    id="myGrad"
+                    id={`myGrad-${i}`}
                     x1="0%"
                     y1="0%"
                     x2="100%"

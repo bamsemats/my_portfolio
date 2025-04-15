@@ -1,17 +1,13 @@
 import { useState, useEffect, useRef } from "react";
-import Data from "./data";
 import { CgShapeHexagon } from "react-icons/cg";
 import "./styles.css";
 import DarkMode from "../darkmode/darkmode";
-import TreeView from "../tree-view/tree-view";
 import SelectorButton from "./selector-button";
 import { IoMdMenu } from "react-icons/io";
 
 export default function ScrollIndicatorStaticBars({
-  url,
   click,
   darkTheme,
-  mainData,
   selectPage,
   menuToggle,
   menuState,
@@ -24,25 +20,6 @@ export default function ScrollIndicatorStaticBars({
   function burgerMenuStyles() {
     return menuState ? "" : `paddingRight: "14px"`;
   }
-
-  async function fetchData(getUrl) {
-    try {
-      setLoading(true);
-      const response = await fetch(getUrl);
-      const data = await response.json();
-
-      setData(data.products);
-      setLoading(false);
-    } catch (e) {
-      console.log(e);
-      setErrorMessage(e.message);
-      setLoading(false);
-    }
-  }
-
-  useEffect(() => {
-    fetchData(url);
-  }, [url]);
 
   function handleScrollEvent() {
     // console.log(

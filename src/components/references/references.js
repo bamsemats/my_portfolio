@@ -1,5 +1,3 @@
-import { useState, useEffect, useRef } from "react";
-import Data from "./data";
 import "./styles.css";
 import cssLogo from "./assets/css3-original.svg";
 import htmlLogo from "./assets/html5-original.svg";

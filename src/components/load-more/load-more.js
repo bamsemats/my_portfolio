@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import Data from "./data";
 import "./styles.css";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
