@@ -10,3 +10,10 @@
   align-items: center;
   justify-content: center;
 }
+@media (width < 786px) {
+  .star-container {
+    scale: 0.9;
+    max-height: 260px;
+  }
+  
+}

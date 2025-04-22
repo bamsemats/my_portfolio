@@ -8,6 +8,7 @@ import TreeView from "../tree-view/tree-view";
 import HangMan from "../hangman/hangman";
 import Tenzies from "../tenzies/tenzies";
 import ChefClaude from "../chef-claude/chef-claude";
+import MemeGenerator from "../meme-generator/meme-generator";
 import "./media-queries.css";
 import "./animations.css";
 
@@ -31,6 +32,7 @@ export default function AppsPage() {
         <HangMan />
         <Tenzies />
         <ChefClaude />
+        <MemeGenerator />
       </div>
     </div>
   );

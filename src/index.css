@@ -10,6 +10,8 @@
   --button-background: #000;
   --button-text: #fff; */
 
+
+  
   --bg-main: #f9f9f9;
   --bg-main-rgb: 249, 249, 249;
   --bg-main-two: #f1e9f8;
@@ -45,11 +47,12 @@
   --text-primary: #fff;
   --button-background: #fff;
   --button-text: #000; */
+  
 
-  --bg-main: #080047;
-  --bg-main-rgb: 8, 0, 71;
-  --bg-main-two: #150681;
-  --bg-main-two-rgb: 21, 6, 129;
+  --bg-main: #0a072b;
+  --bg-main-rgb: 10, 7, 43;
+  --bg-main-two: #0e093b;
+  --bg-main-two-rgb: 14, 9, 59;
   --bg-panel: #0f004c;
   --bg-panel-two: #060031;
   --btn-bg: #ffffff;
@@ -122,7 +125,7 @@ code {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 7rem;
-  background: linear-gradient(100deg, rgba(var(--bg-main-two-rgb), 0.95), rgb(var(--bg-main-rgb), 0.95));
+  background: linear-gradient(100deg, rgba(var(--bg-main-two-rgb), 1), rgb(var(--bg-main-rgb), 1));
   width: 100%;
   min-height: 100vh;
 }
@@ -204,12 +207,14 @@ code {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
+  margin-inline: auto;
+  margin-block: auto;
 }
 .app-container {
   width: 40%;
   min-width: 600px;
-  max-height: 50rem;
-  padding: 32px 32px 16px 32px;
+  /* max-height: 50rem; */
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -219,7 +224,7 @@ code {
   position: relative;
   transform: translate(0);
   margin-bottom: 48px;
-  background: linear-gradient(0deg, rgba(var(--bg-main-two-rgb), 1), rgb(var(--bg-main-rgb), 1));
+  background: linear-gradient(0deg, rgba(var(--bg-main-rgb), 1), rgb(var(--bg-main-twp-rgb), 1), rgba(var(--bg-main-rgb), 1));
   transition: 350ms;
   /* overflow: hidden; */
 }
@@ -230,7 +235,8 @@ code {
   }
   .app-container {
     min-width: 300px;
-    max-height: 35rem;
+    /* max-height: 35rem; */
+    overflow: auto;
   }
   .app-container .title-text {
     font-size: 1.2rem;
@@ -244,12 +250,35 @@ code {
   }
 }
 
+@media (width < 480px) {
+  .app-library-container {
+    margin-top: 48px;
+  }
+  .app-container {
+    min-width: 260px;
+    /* max-height: 35rem; */
+  }
+  .app-container .title-text {
+    font-size: 1rem;
+  }
+  .app-container .tree-view-container {
+    overflow: auto;
+    margin-bottom: 12px;
+  }
+  .app-container .tree-view-container p {
+    font-size: 0.7rem;
+  }
+  .hangman-container {
+    scale: 0.8;
+  }
+}
 @media (width > 1390px) {
   .app-library-container {
     display: grid;
-    justify-content: center;
-    align-items: top;
-    gap: 24px;
+    justify-items: center;
+    align-items: start;
+    margin-inline: auto;
+    gap: 0px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
       'eight two'
@@ -259,6 +288,8 @@ code {
       'seven one'
       'seven nine'
       'seven nine'
+      'eleven ten'
+      'twelve ten'
     ;
     scale: 0.9;
   }
@@ -290,6 +321,12 @@ code {
 .bento-chef-claude {
   grid-area: nine;
   overflow: auto;
+}
+.bento-meme-generator {
+  grid-area: ten;
+}
+.bento-load-more {
+  max-height: 49.2rem;;
 }
 .title-bar {
   background: linear-gradient(var(--bg-panel), var(--bg-panel-two));

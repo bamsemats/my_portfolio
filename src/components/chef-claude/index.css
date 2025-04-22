@@ -58,8 +58,8 @@
   box-sizing: border-box;
   border-radius: 5px;
   border: none;
-  background-color: #141413;
-  color: white;
+  background-color: var(--btn-text);
+  color: var(--btn-bg);
   font-size: 0.8rem;
   font-family: Inter;
   padding: 4px 6px;

@@ -4,6 +4,15 @@
 .about-page {
   z-index: 0;
 }
+.apps-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
 .coding-wallpaper-container {
   width: 100%;
   position: absolute;
@@ -145,6 +154,13 @@
   color: var(--text-body);
   font-size: 1rem;
   width: 75%;
+  text-align: left;
+  line-height: 1.2rem;
+  span {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-heading);
+  }
 }
 .about-me-hexagon {
   scale: 3;
