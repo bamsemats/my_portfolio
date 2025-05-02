@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.74d9ffe1.css",
-    "main.js": "/my_portfolio/static/js/main.f8249326.js",
+    "main.css": "/my_portfolio/static/css/main.423bb3c4.css",
+    "main.js": "/my_portfolio/static/js/main.1370c592.js",
     "static/js/453.bc6e2c0c.chunk.js": "/my_portfolio/static/js/453.bc6e2c0c.chunk.js",
     "static/media/codingWallpaper.jpg": "/my_portfolio/static/media/codingWallpaper.9e2868c6b65d06c30950.jpg",
+    "static/media/movie_library_sc.png": "/my_portfolio/static/media/movie_library_sc.b3a37df2c28e087a6c45.png",
+    "static/media/profile_pic.jpg": "/my_portfolio/static/media/profile_pic.54133cf6e9d07244045e.jpg",
+    "static/media/image_slider_sc.png": "/my_portfolio/static/media/image_slider_sc.b1eda02eb0a3db556ea0.png",
+    "static/media/hangman_sc.png": "/my_portfolio/static/media/hangman_sc.4e15b4ad1f93a93212a5.png",
+    "static/media/recipe_sc.png": "/my_portfolio/static/media/recipe_sc.6ce346927e119caf8137.png",
     "static/media/chef-claude-icon.png": "/my_portfolio/static/media/chef-claude-icon.340e1555799ac9dfa824.png",
     "index.html": "/my_portfolio/index.html",
     "static/media/react-original.svg": "/my_portfolio/static/media/react-original.4e0c97009b885bfa75c5412262a46f5f.svg",
     "static/media/javascript-original.svg": "/my_portfolio/static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
     "static/media/css3-original.svg": "/my_portfolio/static/media/css3-original.39769a8bd378bf410d6b381a8d88fa35.svg",
     "static/media/html5-original.svg": "/my_portfolio/static/media/html5-original.8664168d5bc90b1a24396f85aadbf623.svg",
-    "main.74d9ffe1.css.map": "/my_portfolio/static/css/main.74d9ffe1.css.map",
-    "main.f8249326.js.map": "/my_portfolio/static/js/main.f8249326.js.map",
+    "main.423bb3c4.css.map": "/my_portfolio/static/css/main.423bb3c4.css.map",
+    "main.1370c592.js.map": "/my_portfolio/static/js/main.1370c592.js.map",
     "453.bc6e2c0c.chunk.js.map": "/my_portfolio/static/js/453.bc6e2c0c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74d9ffe1.css",
-    "static/js/main.f8249326.js"
+    "static/css/main.423bb3c4.css",
+    "static/js/main.1370c592.js"
   ]
 }
